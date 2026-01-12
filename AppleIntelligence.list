@@ -1,2 +1,9 @@
 HOST-SUFFIX, apple-relay.apple.com, AppleIntelligence
 HOST-KEYWORD, apple-relay, AppleIntelligence
+HOST-SUFFIX,guzzoni.apple.com, AppleIntelligence
+HOST-SUFFIX, smoot.apple.com, AppleIntelligence
+HOST-SUFFIX, apple-relay.cloudflare.com, AppleIntelligence
+HOST-SUFFIX, apple-relay.fastly-edge.com, AppleIntelligence
+HOST-SUFFIX, cp4.cloudflare.com, AppleIntelligence
+HOST-SUFFIX, apple-relay.apple.com, AppleIntelligence
+HOST-SUFFIX, gspe1-ssl.ls.apple.com, AppleIntelligence
