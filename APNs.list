@@ -1,12 +1,12 @@
-host-suffix, push.apple.com, APNS
+host-suffix, push.apple.com
 
-ip-cidr, 17.249.0.0/16, APNS, no-resolve
-ip-cidr, 17.252.0.0/16, APNS, no-resolve
-ip-cidr, 17.57.144.0/22, APNS, no-resolve
-ip-cidr, 17.188.128.0/18, APNS, no-resolve
-ip-cidr, 17.188.20.0/23, APNS, no-resolve
+ip-cidr, 17.249.0.0/16, no-resolve
+ip-cidr, 17.252.0.0/16, no-resolve
+ip-cidr, 17.57.144.0/22, no-resolve
+ip-cidr, 17.188.128.0/18, no-resolve
+ip-cidr, 17.188.20.0/23, no-resolve
 
-ip6-cidr, 2620:149:a44::/48, APNS, no-resolve
-ip6-cidr, 2403:300:a42::/48, APNS, no-resolve
-ip6-cidr, 2403:300:a51::/48, APNS, no-resolve
-ip6-cidr, 2a01:b740:a42::/48, APNS, no-resolve
+ip6-cidr, 2620:149:a44::/48, no-resolve
+ip6-cidr, 2403:300:a42::/48, no-resolve
+ip6-cidr, 2403:300:a51::/48, no-resolve
+ip6-cidr, 2a01:b740:a42::/48, no-resolve
