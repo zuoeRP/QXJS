@@ -1,22 +1,25 @@
-# ============ Apple Intelligence 分流规则（融合版）============
-# 来源：PeterMicroan/qx-rule + zuoeRP/QXJS
-# 修订：2026-09-02，依据规则分流 / 美国全局双向抓包对比
+# ============================================
+# Apple Intelligence 分流规则
+# 来源：PeterMicroan/qx-rule + zuoeRP/QXJS 融合
+# 修订：2026-09-03，依据三次抓包实测
+# ============================================
 
 # ---- Private Relay 中继 ----
+# 实测已生效，命中 HOST-SUFFIX，走美国专线，有真实流量
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
 DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
 
 # ---- Relay 鉴权入口 ----
-# 抓包依据：仅在全局模式出现，分流模式完全缺失
-# 此条不通会导致上面的 relay 只握手不传数据（0B/0B）
+# 仅在全局模式抓到，分流模式缺失
 DOMAIN,mask-api.icloud.com
 
 # ---- Siri / AI 主端点 ----
-# 抓包依据：guzzoni.smoot.apple.com → 101.34.190.217（国内）
-#          seed.siri.apple.com     → 140.143.177.246（国内）
+# 三次抓包均为 DIRECT 且解析到国内腾讯云：
+#   guzzoni.smoot.apple.com → 101.34.190.217
+#   seed.siri.apple.com     → 140.143.177.246
 DOMAIN-SUFFIX,guzzoni.apple.com
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,siri.apple.com
@@ -30,6 +33,7 @@ DOMAIN-SUFFIX,cp4.cloudflare.com
 DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,gs-loc.apple.com
 
-# ---- 备选，证据不足暂不启用 ----
-# DOMAIN,gdmf.apple.com
+# ---- 备选，证据不足 ----
+# gateway.icloud.com 流量较大，含 iCloud 同步
 # DOMAIN-SUFFIX,gateway.icloud.com
+# DOMAIN,gdmf.apple.com
