@@ -7,3 +7,4 @@ DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
 # ---- Siri / AI ----
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN,api-siri-prod.apple.com
+DOMAIN,mask-api.icloud.com
