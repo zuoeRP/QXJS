@@ -1,0 +1,9 @@
+# ---- Private Relay ----
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+
+# ---- Siri / AI ----
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,api-siri-prod.apple.com
